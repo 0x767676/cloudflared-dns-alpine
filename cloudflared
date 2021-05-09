@@ -1,0 +1,9 @@
+#!/sbin/openrc-run
+
+name="cloudflared"
+command="/etc/cloudflared/cloudflared"
+command_args="--config /etc/cloudflared/config.yml &"
+
+depend() {
+	need net localmount sshd
+}

@@ -1,0 +1,4 @@
+proxy-dns: true
+proxy-dns-address: 0.0.0.0
+proxy-dns-upstream:
+ - https://security.cloudflare-dns.com/dns-query
